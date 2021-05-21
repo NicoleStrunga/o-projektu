@@ -1,23 +1,14 @@
 import React from 'react';
-
-const photos = [
-  {
-    id: 1,
-    title: 'Invalidovna',
-    image: 'http://placekitten.com/200/300',
-  },
-];
+import { photos } from './index';
+import './style.css';
 
 export const Gallery = () => {
   return (
     <div>
       <h2>Galerie</h2>
-      <div>
+      <div className="container--gallery">
         {photos.map((photo) => (
-          <>
-            <p key={photo.id}>{photo.title}</p>
-            <img src={photo.image} alt={photo.title} />
-          </>
+          <img src={photo.image} alt={photo.title} key={photo.id} />
         ))}
       </div>
     </div>
