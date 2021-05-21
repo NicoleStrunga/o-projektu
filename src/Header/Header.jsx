@@ -4,8 +4,12 @@ import './style.css';
 
 export const Header = () => {
   const [green, setGreen] = useState('');
+  const [yellow, setYellow] = useState('');
+  const [red, setRed] = useState('');
+  // const [bold, setBold] = useState('title');
+  const [title, setTitle] = useState('Umetra');
 
-  const handleMouse = () => {
+  const handleMouseGreen = () => {
     if (green === 'green') {
       setGreen('');
     } else {
@@ -13,15 +17,45 @@ export const Header = () => {
     }
   };
 
+  const handleMouseYellow = () => {
+    if (yellow === 'yellow') {
+      setYellow('');
+    } else {
+      setYellow('yellow');
+    }
+  };
+
+  const handleMouseRed = () => {
+    if (red === 'red') {
+      setRed('');
+    } else {
+      setRed('red');
+    }
+  };
+
+  const handleTitle = () => {
+    if (title === 'Umetra') {
+      setTitle('UMetra');
+    } else {
+      setTitle('Umetra');
+    }
+  };
+
   return (
     <header>
-      <h1>UMetra</h1>
+      <h1
+        onMouseEnter={handleTitle}
+        onMouseLeave={handleTitle}
+        className="title"
+      >
+        {title}
+      </h1>
       <nav>
         <ul>
           <li>
             <Link
-              onMouseEnter={handleMouse}
-              onMouseLeave={handleMouse}
+              onMouseEnter={handleMouseGreen}
+              onMouseLeave={handleMouseGreen}
               className={green}
               to="/"
             >
@@ -29,12 +63,22 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="yellow" to="/about">
+            <Link
+              onMouseEnter={handleMouseYellow}
+              onMouseLeave={handleMouseYellow}
+              className={yellow}
+              to="/about"
+            >
               O nás
             </Link>
           </li>
           <li>
-            <Link className="red" to="/gallery">
+            <Link
+              onMouseEnter={handleMouseRed}
+              onMouseLeave={handleMouseRed}
+              className={red}
+              to="/gallery"
+            >
               Galerie
             </Link>
           </li>
