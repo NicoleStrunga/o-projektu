@@ -3,11 +3,8 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Home } from './Home/Home';
 import { About } from './About/About';
+import { Gallery } from './Gallery/Gallery';
 import './style.css';
-
-const Users = () => {
-  return <h2>Users</h2>;
-};
 
 const App = () => (
   <Router>
@@ -16,13 +13,13 @@ const App = () => (
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">O projektu</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">O nás</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/gallery">Galerie</Link>
             </li>
           </ul>
         </nav>
@@ -32,8 +29,8 @@ const App = () => (
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/users">
-          <Users />
+        <Route path="/gallery">
+          <Gallery />
         </Route>
         <Route path="/">
           <Home />
