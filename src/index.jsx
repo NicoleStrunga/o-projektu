@@ -9,21 +9,19 @@ import { Header } from './Header/Header';
 
 const App = () => (
   <Router>
-    <div>
-      <Header />
+    <Header />
 
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/gallery">
-          <Gallery />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/gallery">
+        <Gallery />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
   </Router>
 );
 

@@ -5,7 +5,7 @@ import './style.css';
 export const Gallery = () => {
   return (
     <div>
-      <h2>Galerie</h2>
+      {/* <h2>Galerie</h2> */}
       <div className="container--gallery">
         {photos.map((photo) => (
           <img src={photo.image} alt={photo.title} key={photo.id} />

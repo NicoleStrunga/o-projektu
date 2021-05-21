@@ -3,7 +3,6 @@ import React from 'react';
 export const Home = () => {
   return (
     <div className="container">
-      <h1>UMetra</h1>
       <p>
         Umění v metru. Interaktivní mapa metra A, B a C, kde budou v
         jednotlivých stanicích zaznamenána umělecká díla, která se v nich

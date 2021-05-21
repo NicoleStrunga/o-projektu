@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const Header = () => {
   return (
     <header>
+      <h1>UMetra</h1>
       <nav>
         <ul>
           <li>
