@@ -1,5 +1,3 @@
-'use strict';
-
 export const photos = [
   {
     id: 1,
@@ -7,42 +5,42 @@ export const photos = [
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 3,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 4,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 5,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 6,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 7,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 8,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
   {
-    id: 1,
+    id: 9,
     title: 'Invalidovna',
     image: 'http://placekitten.com/200/300',
   },
