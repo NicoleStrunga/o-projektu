@@ -1,35 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from './Home/Home';
 import { About } from './About/About';
 import { Gallery } from './Gallery/Gallery';
 import './style.css';
+import { Header } from './Header/Header';
 
 const App = () => (
   <Router>
     <div>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <Link className="green" to="/">
-                O projektu
-              </Link>
-            </li>
-            <li>
-              <Link className="yellow" to="/about">
-                O nás
-              </Link>
-            </li>
-            <li>
-              <Link className="red" to="/gallery">
-                Galerie
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
 
       <Switch>
         <Route path="/about">
