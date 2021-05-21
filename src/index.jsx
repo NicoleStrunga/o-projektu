@@ -13,13 +13,19 @@ const App = () => (
         <nav>
           <ul>
             <li>
-              <Link to="/">O projektu</Link>
+              <Link className="green" to="/">
+                O projektu
+              </Link>
             </li>
             <li>
-              <Link to="/about">O nás</Link>
+              <Link className="yellow" to="/about">
+                O nás
+              </Link>
             </li>
             <li>
-              <Link to="/gallery">Galerie</Link>
+              <Link className="red" to="/gallery">
+                Galerie
+              </Link>
             </li>
           </ul>
         </nav>
