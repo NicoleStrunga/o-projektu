@@ -1,24 +1,24 @@
 h1 {
   font-size: 60px;
-  margin: 0;
+  position: relative;
+  top: 25px;
+  left: 0;
 }
 
 header {
   position: relative;
   align-items: center;
-  padding: 40px 0 60px 0;
+  padding-bottom: 60px;
 }
 
 nav {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  right: 0; */
+  right: 0;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* max-width: 90%; */
-  /* margin: auto; */
 }
 
 nav ul {
@@ -35,6 +35,7 @@ nav ul li a {
   margin: 0 15px;
   padding: 40px 10px;
   border-radius: 50px;
+  font-weight: bold;
 }
 
 .green {

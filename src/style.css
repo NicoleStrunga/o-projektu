@@ -10,3 +10,8 @@ html {
 h2 {
   text-align: center;
 }
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}

@@ -19,7 +19,8 @@ body {
 
 img {
   margin: 10px;
-  width: 28%;
+  width: 25%;
+  border-radius: 5%;
 }
 
 @media (min-width: 768px) {
